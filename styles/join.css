@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url("../images/car4.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+   
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 500px;
+margin-top: auto;
+margin-bottom: auto;
+width: 500px;
+background-color: rgba(0,0,0,0.5)
+}
+
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+margin-top: 10px;
+color: white;
+}
+
+
+
+.error{
+    color: red;
+}
