@@ -23,7 +23,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    
 
+    
 </head>
 
 <body>
@@ -63,11 +70,37 @@
                      </div>
                 </form>
         </div>
-
-        
-
-        </div>
-    </nav>
     
+    </nav>
+
+
+
+<div id="leaflet"></div>
+<script type="application/javascript" src="//unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script> 
+    var map = new L.Map('leaflet', {
+    center: [47.159810,27.587200],
+    zoom: 9,
+    layers: [
+        new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {})
+    ]
+});
+   var marker = L.marker([47.159810,27.587200]).addTo(map).bindPopup('Temp: 26 C, Hum: 40%'); 
+function addMarker(e){
+// Add marker to map at click location; add popup window
+var newMarker = new L.marker(e.latlng).addTo(map);
+}
+addMarker(47.159810,27.587200);
+
+</script>  
+
+<div id="map"></div>
+<script>
+  var map = L.map('map').setView([47.159810,27.587200],9);
+  L.tileLayer('https://api.maptiler.com/maps/topographique/{z}/{x}/{y}.jpg?key=ent3rAUYRJ6Fc14Uni2f', {
+    attribution:<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>
+  }).addTo(map);
+</script>
+
 </body>
 </html>

@@ -33,8 +33,14 @@ margin-top: 10px;
 color: white;
 }
 
-
-
 .error{
     color: red;
 }
+
+
+  #leaflet{
+      height: 50%;
+      width: 70%;
+      margin:50px auto;
+      position: center;
+  }

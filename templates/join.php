@@ -106,6 +106,14 @@
                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
                             <input id="city" type="text" class="form-control" placeholder="City" name='city' >
+                            <script>
+								function activatePlaces(){
+									var input = document.getElementById('city');
+									var autocomplete = new google.maps.places.Autocomplete(input);
+								}
+							</script>
+							<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZiRQSd8fx7u4KGqey86oBwmUh1lWkuBA&libraries=places&callback=activatePlaces"></script>
+
                         </div>
 
                         <div class="input-group form-group">

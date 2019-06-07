@@ -83,7 +83,7 @@
                             <button id="btnHome" name ="btnHome" type="submit" class="btn btn-secondary float-right btn-dark" id="contact-submit">Back to home page</button>
                                 <?php
                                     if(isset($_POST['btnHome'])){
-                                        header('Location: ../index.php');
+                                        header('Location: ../../index.php');
                                     }
                                 ?>
                             

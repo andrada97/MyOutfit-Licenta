@@ -1,8 +1,8 @@
 <?php
 
-    $dbServername = "www.myoutfit.com";
+    $dbServername = "localhost:3308";
     $dbUsername = "root";
     $dbPassword = "";
-    $dbName = "joinsystem";
+    $dbName = "join";
 
     $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
