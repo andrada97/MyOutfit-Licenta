@@ -85,7 +85,7 @@
              <!-- Caseta de cautare -->
              <section class="search-sec">
                      <div class="container">
-                         <form action="./includes/getOutfit.php" method="post" >
+                         <form action="../includes/getOutfit.php" method="post" >
                              <div class="row">
                                  <div class="col-lg-12">
                                      <div class="row">
