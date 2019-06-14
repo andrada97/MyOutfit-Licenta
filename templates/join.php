@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -61,8 +59,6 @@
     </nav>
     
     
-    <!-- <?php include 'abonare.php'; ?> -->
-
 
     <!-- Caseta de abonare -->
     <div class="container">
@@ -77,7 +73,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form class="join-form"   method="POST" action="../includes/join.inc.php" method="POST">
+                    <form class="join-form"   method="POST" action="../includes/join.inc.php" >
                         
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
@@ -138,3 +134,4 @@
 
 </body>
 </html>
+

@@ -17,6 +17,10 @@ height: 70%;
 align-content: center;
 }
 
+.container h2{
+color: white;
+}
+
 .card{
 height: 350px;
 margin-top: auto;

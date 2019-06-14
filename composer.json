@@ -1,0 +1,6 @@
+{
+    "require": {
+        "sendgrid/sendgrid": "^7.3",
+        "php-http/curl-client": "^1.7"
+    }
+}
