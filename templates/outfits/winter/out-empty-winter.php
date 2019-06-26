@@ -1,6 +1,4 @@
-<?php
-    include_once('../header-out.php');
-?>
+
 
                 <!-- Afisare imagini -->
                 <section class="projects-section">		
@@ -9,7 +7,7 @@
                                 <div class="project-block">
                                     <div class="inner-box">
                                         <div class="image">
-                                            <img src="../../../images/outfits/female/winter/dinner/1.jpg" alt="" />
+                                            <img src="../../../images/outfits/female/winter/dinner/3.jpg" alt="" />
                                             <div class="overlay-box">
                                                 <div class="overlay-inner">
                                                     <div class="title">Outfit for dinner</div> 
@@ -33,7 +31,7 @@
                                 <div class="project-block">
                                     <div class="inner-box">
                                         <div class="image">
-                                            <img src="../../../images/outfits/female/winter/festival/1.jpg" alt="" />
+                                            <img src="../../../images/outfits/female/winter/festival/3.jpg" alt="" />
                                             <div class="overlay-box">
                                                 <div class="overlay-inner">
                                                     <div class="title">Outfit for festival</div>
@@ -54,30 +52,7 @@
                                         </div>
                                     </div>
                                 </div>		
-                                <div class="project-block">
-                                    <div class="inner-box">
-                                        <div class="image">
-                                            <img src="../../../images/outfits/female/winter/park/1.jpg" alt="" />
-                                            <div class="overlay-box">
-                                                <div class="overlay-inner">
-                                                    <div class="title">Outfit for park</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>		
-                                <div class="project-block">
-                                    <div class="inner-box">
-                                        <div class="image">
-                                            <img src="../../../images/outfits/male/winter/park/1.jpg" alt="" />
-                                            <div class="overlay-box">
-                                                <div class="overlay-inner">
-                                                    <div class="title">Outfit for park</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>		
+                                	
                                 <div class="project-block">
                                     <div class="inner-box">
                                         <div class="image">
@@ -117,7 +92,129 @@
                                 <div class="project-block">
                                     <div class="inner-box">
                                         <div class="image">
-                                            <img src="../../../images/outfits/male/winter/sport/2.jpg" alt="" />
+                                            <img src="../../../images/outfits/male/winter/sport/1.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Sport outfit</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>			
+
+
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/winter/dinner/3.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for dinner</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>				
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/male/winter/dinner/4.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for dinner</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>				
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/winter/festival/5.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for festival</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/male/winter/festival/3.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for festival</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>		
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/winter/park/4.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for park</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>		
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/male/winter/park/3.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for park</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>		
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/winter/school/5.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for school</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>		
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/male/winter/school/2.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for school</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>		
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/winter/sport/3.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Sport outfit </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>		
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/male/winter/sport/4.jpg" alt="" />
                                             <div class="overlay-box">
                                                 <div class="overlay-inner">
                                                     <div class="title">Sport outfit</div>
@@ -134,7 +231,3 @@
     </div>    
     </div>
 
-</body>
-</html>
-<!-- Javascript pentru viziualizarea imaginilor  -->
-<script src="../../../scripts/carousel.js"> </script>

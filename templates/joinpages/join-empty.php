@@ -35,22 +35,22 @@
     <!-- Bara de meniu -->
     <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark ">
         <div class="container" >
-            <a class="navbar-brand" href="../index.php">My Outfit</a>
+            <a class="navbar-brand" href="../../index.php">My Outfit</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../templates/weather.html">Weather</a>
+                        <a class="nav-link" href="../weather.html">Weather</a>
                     </li>
 
                     <li class="nav-item">
-                            <a class="nav-link" href="../templates/join.php">Join</a>
+                            <a class="nav-link" href="../join.php">Join</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="../templates/about.html">About</a>
+                        <a class="nav-link" href="../about.html">About</a>
                     </li>   
                 </ul>
             </div>

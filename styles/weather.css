@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url("../images/car1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+   
+height: 100%;
+align-content: center;
+}
+
+#leaflet{
+      height: 50%;
+      width: 70%;
+      margin:50px auto;
+      position: center;
+}
+
+
+
+/* =========================
+    GENERAL START
+===========================*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+}
+#background {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: table;
+}
+.default-background {
+    background-image: url(http://wallpapercave.com/wp/nsu3cSp.jpg);
+}
+.clouds-background {
+    background-image: url(http://wallpapercave.com/wp/sYZGesY.jpg);
+}
+.rain-background {
+    background-image: url(https://images.alphacoders.com/201/201751.jpg);
+}
+.clear-background {
+    background-image: url(https://ak2.picdn.net/shutterstock/videos/27173719/thumb/1.jpg);
+}
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center
+}
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #F9F3F4;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 250%;
+    padding-bottom: 15px;
+}
+/* =========================
+    GENERAL END
+===========================*/
+
+/* =========================
+    WEATHER START
+===========================*/
+.weather-app {
+    width: 50%;
+    height: 25%;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px #888888;
+    overflow: hidden;
+    text-align:center;
+    font-family: "Mono";
+    margin:50px auto;
+    position: center;
+}
+
+.left {
+    float: left;
+    background: #262626;
+    padding:10px;
+    width:40%;
+    height:100%;
+    color:white;
+}
+
+.temperature-celsius {
+    margin-top:30px;
+    margin-bottom:5px;
+    font-size:32px;
+    font-weight: bold;
+    width: 150px;
+}
+.temperature-fahrenheit {
+    display: none;
+    margin-top:30px;
+    margin-bottom:5px;
+    font-size:32px;
+    font-weight: bold;
+    width: 150px;
+}
+
+.location {
+    font-size: 18px;
+    width:100%;
+    width:150px;
+}
+
+.right {
+    float: right;
+    width: 60%;
+    height:100%;
+}
+
+.top {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    background: #cec;
+}
+
+.top img {
+    margin-top: 15px;
+}
+
+.top p {
+    margin-top: -14px;
+    position: relative;
+    text-transform: capitalize;
+}
+.bottom {
+    height: 100px;
+    background: #669999;
+    color: white;
+    font-weight: bold;
+}
+
+.humidity {
+    padding: 8px;
+}
+/* =========================
+    WEATHER END
+===========================*/
+

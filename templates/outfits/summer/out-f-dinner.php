@@ -56,7 +56,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>	
+                                </div>
 
                                 <div class="project-block">
                                     <div class="inner-box">
@@ -70,7 +70,21 @@
                                         </div>
                                     </div>
                                 </div>	
+                                
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/summer/dinner/6.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for dinner</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                 
                             </div>			
                         </div>		
                     </section>    

@@ -1,3 +1,8 @@
+<?php
+    // include_once 'templates/sendDailyMail.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,9 @@
     <meta charset="utf-8">
     <meta name="description" content="My outfit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>MyOutfit</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -23,8 +31,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.js"></script>
-
-	
+   
+    	
 	<!-- Geolocatia curenta -->
 	<script src="scripts/geolocation.js"></script>
 
@@ -56,59 +64,50 @@
 				</ul>
 			
             </div>
-	
-			
-            <!-- Buton de cautare alta locatie-->
+    
+            
+		
+            <?php
+            global $temp;
+            $temp = 22.0;
+            ?>
+            
             <div class="col-sm-3 col-md-3">
-			<div id="address" style="color:white; position:center;"></div>
-                    <form autocomplete="off" class="navbar-form" role="search">
-                        <div class="input-group">
-						<input type="text" class="form-control" placeholder="Change city.." name="myCity" id="cityInput">
-
-							<script>
-								function activatePlaces(){
-									var input = document.getElementById('cityInput');
-									var autocomplete = new google.maps.places.Autocomplete(input);
-								}
-							</script>
-							<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZiRQSd8fx7u4KGqey86oBwmUh1lWkuBA&libraries=places&callback=activatePlaces"></script>
-
-                         </div>
-                    </form>
+            <div id="address" style="color:white; "></div>
+            <div style="color:white; "><?php echo $temp ?> <span>&#8451;</span> </div>
             </div>
         </div>
     </nav>
+
 
     <div class="container" >
             <!-- Caseta de cautare -->
             <section class="search-sec">
                     <div class="container">
-                        <form action="#" method="post" novalidate="novalidate">
+                        <form action="./includes/getOutfit.php" method="post" >
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="row">
+
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <!-- <input type="text" class="form-control search-slt" placeholder="Enter Pickup City"> -->
-                                            <select class="form-control search-slt" id="Genul">
-                                                <option value="0">Select gender</option>
-                                                <option value="1">Female</option>
-                                                <option value="2">Male</option>
+                                         <select name="gen" class="form-control search-slt" id="gen">
+                                                <option> Select gender</option>
+                                                <option value="female">Female</option>
+                                                <option value="male">Male</option>
                                             </select>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <!-- <input type="text" class="form-control search-slt" placeholder="Enter Drop City"> -->
-                                            <select class="form-control search-slt" id="Activitate">
-                                                <option value="0">Select activity</option>
-                                                <option value="1">Park</option>
-                                                <option value="2">Dinner</option>
-                                                <option value="3">Sport</option>
-                                                <option value="4">Festival</option>
-                                                <option value="5">Party</option>
-												<option value="6">School</option>
+                                         <select name="activity" class="form-control search-slt" id="activity">
+                                                <option >Select activity</option>
+                                                <option value="park">Park</option>
+                                                <option value="dinner">Dinner</option>
+                                                <option value="sport">Sport</option>
+                                                <option value="festival">Festival</option>
+												<option value="school">School</option>
                                             </select>
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <button id="searchButton" type="button" class="btn btn-dark ">Search</button>
+                                            <input  name="submit"  id="submit" type="submit" class="btn btn-dark " value="Search"/>
                                         </div>
                                     </div>
                                 </div>
@@ -116,53 +115,34 @@
                         </form>
                     </div>
                 </section>
+               
 
-                <!-- Afisare imagini -->
-                <section class="projects-section">		
-                        <div class="outer-container">
-                            <div class="projects-carousel owl-carousel owl-theme">
-                                <div class="project-block">
-                                    <div class="inner-box">
-                                        <div class="image">
-                                            <img src="images/out2.jpg" alt="" />
-                                            <div class="overlay-box">
-                                                <div class="overlay-inner">
-                                                    <div class="title">Poza1</div> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>				
-                                <div class="project-block">
-                                    <div class="inner-box">
-                                        <div class="image">
-                                            <img src="images/out3.jpg" alt="" />
-                                            <div class="overlay-box">
-                                                <div class="overlay-inner">
-                                                    <div class="title">Poza2</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>				
-                                <div class="project-block">
-                                    <div class="inner-box">
-                                        <div class="image">
-                                            <img src="images/out2.jpg" alt="" />
-                                            <div class="overlay-box">
-                                                <div class="overlay-inner">
-                                                    <div class="title">Poza3</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>				
-                            </div>			
-                        </div>		
-                    </section>    
-            </div>
-        </div>
-    </div>    
+             <?php 
+             
+             $temp = 15.0;
+
+             if($temp >=23.0){
+                include('templates/outfits/summer/out-empty-summer.php');
+                }   
+            else {
+                if($temp<23.0 && $temp>=17.0){
+                    include('templates/outfits/spring/out-empty-spring.php');
+                }
+                else{
+                    if($temp<10.0){
+                        include('templates/outfits/winter/out-empty-winter.php');
+                    }
+                    else{
+                        include('templates/outfits/autumn/out-empty-autumn.php');
+                        
+                    }
+                }
+            }
+             ?>
+
+
+
+
 
         <!--    {% for new in news %}-->
         <!--        <h1><b> {{ new.stare_vreme }}</b></h1>-->
@@ -190,12 +170,13 @@
               </div> -->
 
     </div>
- 
-	<!-- <div id="ip"></div>
-<hr/>Full response: <pre id="details"></pre> 
-</body> -->
-    
 
+    <!-- <footer>
+         <p>MyOutfit &copy 2019 </p>                           
+    </footer>                              -->
+</body>
+
+</html>
 
 <!-- Javascript pentru viziualizarea imaginilor  -->
 <script src="scripts/carousel.js"> </script>

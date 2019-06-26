@@ -11,7 +11,7 @@
     <meta name="description" content="My outfit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Aboneaza-te la site</title>
+    <title>Join to us</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 

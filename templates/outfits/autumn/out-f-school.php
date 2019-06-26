@@ -71,6 +71,19 @@
                                     </div>
                                 </div>	
 
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/female/autumn/school/6.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Outfit for school</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>			
                         </div>		
                     </section>    

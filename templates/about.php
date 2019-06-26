@@ -10,12 +10,12 @@
     <meta name="description" content="My outfit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Aboneaza-te la site</title>
+    <title>About us</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="../styles/join.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -52,10 +52,43 @@
                 </ul>
             </div>
 
+            
         
 
         </div>
     </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3> About our team</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form class="join-succ-form"   method="POST"  >
+                        <h4> Application created by Țăpuc Andrada-Ionela. </h4>
+                        <h4> If you would like to send us new outfit ideas, please contact us at: </h4>
+                        <h4><i>myoutfit@gmail.com </i></h4>
+                        <div class="form-group">
+                            <button id="btnHome" name ="btnHome" type="submit" class="btn btn-secondary float-right btn-dark" id="contact-submit">Home page</button>
+                                <?php
+                                    if(isset($_POST['btnHome'])){
+                                        header('Location: ../index.php');
+                                    }
+                                ?>
+                            
+                        </div>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
     
 </body>
 </html>

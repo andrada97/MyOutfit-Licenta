@@ -3,19 +3,22 @@
 <html lang="en">
 <head>
 
-    
-    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+   
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="My outfit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Aboneaza-te la site</title>
+    <title>Weather </title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="../styles/join.css">
+    <link rel="stylesheet" type="text/css" href="../styles/weather.css">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -29,7 +32,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
     
-
+    <script type="text/javascript" src="../scripts/weatherCard.js"></script>
+    
+    <!-- Geolocatia curenta -->
+    <script src="../scripts/geolocation.js"></script>
     
 </head>
 
@@ -59,48 +65,85 @@
                 </ul>
             </div>
 
-            <!-- Buton de cautare alta locatie-->
-        <div class="col-sm-3 col-md-3">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Find location.." name="q" id="search_location">
-                        <div class="input-group-btn">
-                             <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </div>
-                     </div>
-                </form>
-        </div>
+            <?php
+            global $temp;
+            $temp = 22.0;
+            ?>
+            
+            <div class="col-sm-3 col-md-3">
+            <div id="address" style="color:white; "></div>
+            <div style="color:white; "><?php echo $temp ?> <span>&#8451;</span> </div>
+            </div>
     
     </nav>
 
 
+<div class="container">
+ <div id="leaflet"></div>
+    <script type="application/javascript" src="//unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script> 
+        var map = new L.Map('leaflet', {
+        center: [47.159810,27.587200],
+        zoom: 9,
+        layers: [
+            new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {})
+        ]
+    });
+    var marker = L.marker([47.159810,27.587200]).addTo(map).bindPopup('Temp: 26 C, Hum: 40%'); 
+    function addMarker(e){
+    // Add marker to map at click location; add popup window
+    var newMarker = new L.marker(e.latlng).addTo(map);
+    }
+    addMarker(47.159810,27.587200);
 
-<div id="leaflet"></div>
-<script type="application/javascript" src="//unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script> 
-    var map = new L.Map('leaflet', {
-    center: [47.159810,27.587200],
-    zoom: 9,
-    layers: [
-        new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {})
-    ]
-});
-   var marker = L.marker([47.159810,27.587200]).addTo(map).bindPopup('Temp: 26 C, Hum: 40%'); 
-function addMarker(e){
-// Add marker to map at click location; add popup window
-var newMarker = new L.marker(e.latlng).addTo(map);
-}
-addMarker(47.159810,27.587200);
+    </script>  
 
-</script>  
+    <div id="map"></div>
+    <script>
+    var map = L.map('map').setView([47.159810,27.587200],9);
+    L.tileLayer('https://api.maptiler.com/maps/topographique/{z}/{x}/{y}.jpg?key=ent3rAUYRJ6Fc14Uni2f', {
+        attribution:<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>
+    }).addTo(map);
+    </script> 
 
-<div id="map"></div>
-<script>
-  var map = L.map('map').setView([47.159810,27.587200],9);
-  L.tileLayer('https://api.maptiler.com/maps/topographique/{z}/{x}/{y}.jpg?key=ent3rAUYRJ6Fc14Uni2f', {
-    attribution:<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>
-  }).addTo(map);
-</script>
 
+<!-- <div id="background">
+	<section id='itroBackground' class="intro">
+		<div class="inner">
+			<div class="content"> -->
+
+
+				<div class="weather-app">
+					<div class="left">
+
+						<div id="toggleCelsius" class="temperature-celsius"><span id="temperatureCelsius">28.4</span> <span>&#8451;</span> </div> 
+						<div style="display:none;" id='toggleFahrenheit' class="temperature-fahrenheit"><span id="temperatureFahrenheit">0</span></div> 
+
+						<div class="location"><span id="loc">Iași</span></div>
+
+					</div>
+					<div class="right">
+						<div class="top">
+							<img id="icon" width="75px" src="http://openweathermap.org/img/w/11d.png" onerror="this.src='http://openweathermap.org/img/w/11d.png'" />
+							<p id="description"></p>
+						</div>
+						<div class="bottom">
+							<div class="humidity">
+								<span>Humidity: 
+									<span id="humidity">20</span>%
+									<span>💧</span>
+								</span>
+							</div>
+							<div class="wind">
+								<span>Wind: <span id="wind">15</span> m/h | Direction: <span id="direction">N</span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- </div>
+		</div>
+	</section>
+	</div> -->
+</div>
 </body>
 </html>

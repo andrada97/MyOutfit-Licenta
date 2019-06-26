@@ -10,6 +10,8 @@
      <meta name="description" content="My outfit">
      <meta name="viewport" content="width=device-width, initial-scale=1">
  
+     <title>MyOutfit</title>
+
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    
@@ -118,52 +120,7 @@
                      </div>
                  </section>
  
-                 <!-- Afisare imagini -->
-                 <section class="projects-section">		
-                         <div class="outer-container">
-                             <div class="projects-carousel owl-carousel owl-theme">
-                                 <div class="project-block">
-                                     <div class="inner-box">
-                                         <div class="image">
-                                             <img src="../images/out2.jpg" alt="" />
-                                             <div class="overlay-box">
-                                                 <div class="overlay-inner">
-                                                     <div class="title">Poza1</div> 
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>				
-                                 <div class="project-block">
-                                     <div class="inner-box">
-                                         <div class="image">
-                                             <img src="../images/out3.jpg" alt="" />
-                                             <div class="overlay-box">
-                                                 <div class="overlay-inner">
-                                                     <div class="title">Poza2</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>				
-                                 <div class="project-block">
-                                     <div class="inner-box">
-                                         <div class="image">
-                                             <img src="../images/out2.jpg" alt="" />
-                                             <div class="overlay-box">
-                                                 <div class="overlay-inner">
-                                                     <div class="title">Poza3</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>				
-                             </div>			
-                         </div>		
-                     </section>    
-             </div>
-         </div>
-     </div>    
+                
  
  
      </div>

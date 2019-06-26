@@ -1,6 +1,6 @@
 <?php
 
-     $temp = 25.0;
+     $temp = 27.0;
 
     if(isset($_POST['submit'])){
 

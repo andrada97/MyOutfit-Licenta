@@ -71,6 +71,20 @@
                                     </div>
                                 </div>	
 
+
+                                <div class="project-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="../../../images/outfits/male/spring/sport/6.jpg" alt="" />
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="title">Sport outfit</div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>			
                         </div>		
                     </section>    
