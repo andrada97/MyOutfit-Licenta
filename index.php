@@ -34,7 +34,9 @@
    
     	
 	<!-- Geolocatia curenta -->
-	<script src="scripts/geolocation.js"></script>
+    <script src="scripts/geolocation.js"></script>
+    <script src="scripts/currentW.js"></script>
+
 
 </head>
 
@@ -67,15 +69,12 @@
     
             
 		
-            <?php
-            global $temp;
-            $temp = 22.0;
-            ?>
-            
+    
             <div class="col-sm-3 col-md-3">
-            <div id="address" style="color:white; "></div>
-            <div style="color:white; "><?php echo $temp ?> <span>&#8451;</span> </div>
+                <div id="address" style="color:white; text-align: right; "></div>
+                <div id='temp' style="color:white;  text-align: right;"></div>
             </div>
+            <div><img class = "icon" width="75px" margin-left='0px'/></div>
         </div>
     </nav>
 

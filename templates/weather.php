@@ -32,10 +32,11 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
     
-    <script type="text/javascript" src="../scripts/weatherCard.js"></script>
+    <!-- <script type="text/javascript" src="../scripts/weatherCard.js"></script> -->
     
     <!-- Geolocatia curenta -->
     <script src="../scripts/geolocation.js"></script>
+    <script src="../scripts/currentW.js"></script>
     
 </head>
 
@@ -65,15 +66,13 @@
                 </ul>
             </div>
 
-            <?php
-            global $temp;
-            $temp = 22.0;
-            ?>
             
             <div class="col-sm-3 col-md-3">
-            <div id="address" style="color:white; "></div>
-            <div style="color:white; "><?php echo $temp ?> <span>&#8451;</span> </div>
+                <div id="address" style="color:white; text-align: right; "></div>
+                <div id='temp' style="color:white;  text-align: right;"></div>
             </div>
+            <div><img class = "icon" width="75px" margin-left='0px'/></div>
+
     
     </nav>
 
@@ -102,48 +101,44 @@
     <script>
     var map = L.map('map').setView([47.159810,27.587200],9);
     L.tileLayer('https://api.maptiler.com/maps/topographique/{z}/{x}/{y}.jpg?key=ent3rAUYRJ6Fc14Uni2f', {
-        attribution:<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>
+        attribution:<a href="https://www.maptiler.com/copyright/" target="_blank"> © MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>
     }).addTo(map);
     </script> 
 
 
-<!-- <div id="background">
-	<section id='itroBackground' class="intro">
-		<div class="inner">
-			<div class="content"> -->
 
-
-				<div class="weather-app">
-					<div class="left">
-
-						<div id="toggleCelsius" class="temperature-celsius"><span id="temperatureCelsius">28.4</span> <span>&#8451;</span> </div> 
-						<div style="display:none;" id='toggleFahrenheit' class="temperature-fahrenheit"><span id="temperatureFahrenheit">0</span></div> 
-
-						<div class="location"><span id="loc">Iași</span></div>
-
-					</div>
-					<div class="right">
-						<div class="top">
-							<img id="icon" width="75px" src="http://openweathermap.org/img/w/11d.png" onerror="this.src='http://openweathermap.org/img/w/11d.png'" />
-							<p id="description"></p>
-						</div>
-						<div class="bottom">
-							<div class="humidity">
-								<span>Humidity: 
-									<span id="humidity">20</span>%
-									<span>💧</span>
-								</span>
-							</div>
-							<div class="wind">
-								<span>Wind: <span id="wind">15</span> m/h | Direction: <span id="direction">N</span></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- </div>
+<div class="weather-app">
+	<div class="left">
+    <div id="address2" class='location' style="color:white; text-align: right; "></div>
+    <div id='temp2' class="temperature-celsius" style="color:white;  text-align: right;"></div>
+        <!-- <div id='temp' style="color:white; "></div> -->
+		<!-- <div id="toggleCelsius" class="temperature-celsius"><div id="temp"></div></div>  -->
+        <!-- <span id='temp'> </span> -->
+	    <!-- <div id='address' class="location"></div> -->
+        <!-- <div id="address" style="color:white; "></div> -->
+	</div>
+                    
+    <div class="right">
+		<div class="top">
+				<img class = "icon" width="75px"/>
+				<p id="stare" style="color:#262626;"></p>
 		</div>
-	</section>
-	</div> -->
+        
+        <div class="bottom">
+			<div class="humidity">
+				<span>Humidity: 
+                    <span id='umid'></span>
+					<span>💧</span>
+				</span>
+			</div>
+			<div class="wind">
+				<span>Wind: <span id="vant"></span></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 </div>
 </body>
 </html>
