@@ -1,13 +1,8 @@
-
-
-
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-
-    
-    
+  
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="My outfit">
@@ -26,12 +21,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
 </head>
 
 <body>
 
-   
     <!-- Bara de meniu -->
     <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark ">
         <div class="container" >
@@ -42,27 +35,21 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../weather.html">Weather</a>
+                        <a class="nav-link" href="../weather.php">Weather</a>
                     </li>
 
                     <li class="nav-item">
-                            <a class="nav-link" href="../join.php">Join</a>
+                        <a class="nav-link" href="../join.php">Join</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="../about.html">About</a>
+                        <a class="nav-link" href="../about.php">About</a>
                     </li>   
                 </ul>
             </div>
-
-        
-
         </div>
     </nav>
-    
-    
-
-
+     
     <!-- Caseta de abonare -->
     <div class="container">
         <div class="d-flex justify-content-center h-100">
@@ -77,24 +64,23 @@
                 </div>
                 <div class="card-body">
                     <form class="join-succ-form"   method="POST"  >
-                        <h4>Email existent. </h4>
-
+                        <h4>Existing email! </h4>
                         <div class="form-group">
                             <button id="btnHome" name ="btnHome" type="submit" class="btn btn-secondary float-right btn-dark" id="contact-submit">Try again</button>
                                 <?php
                                     if(isset($_POST['btnHome'])){
                                         header('Location: ../join.php');
                                     }
-                                ?>
-                            
+                                ?> 
                         </div>
-                    
                     </form>
                 </div>
             </div>
         </div>
         </div>
-
+<?php
+    include_once('../outfits/footer.php');
+?>
 
 </body>
 </html>

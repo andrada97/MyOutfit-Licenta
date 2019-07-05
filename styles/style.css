@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
 @import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
 
-
 html,body{
 background-image: url("../images/car1.jpg"); 
  background-size: cover; 
@@ -12,15 +11,9 @@ font-family: 'Numans', sans-serif;
 }
 
 .container{
-   
 height: 70%;
 align-content: center;
 }
-
-.container h2{
-color: white;
-}
-
 
 .card{
 height: 350px;
@@ -33,11 +26,6 @@ background-color: rgba(0,0,0,0.5)
 input[type=submit] {
     background-color: #343a40;
     color: #fff;
-}
-
-.card-header h3{
-margin-top: 50px;
-color: white;
 }
 
 .login_btn{
@@ -67,7 +55,20 @@ size: 10px;
 	margin-left: 20px;
 }
 
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:#212529;
+	color: white;
+	text-align: center;
+  }
 
+.footer p{
+margin: 0px ;
+font-size: 0.7rem;
+}
 
 @media (min-width: 992px){
     .search-sec{
@@ -81,7 +82,6 @@ size: 10px;
         background: rgba(48, 52, 54, 0.51);
     }
 }
-
 
 /* Imagine Slider */
 .projects-section{
@@ -263,8 +263,6 @@ size: 10px;
 	background-color:rgba(255,255,255,0.30);
 } 
 
-
-
 .project-block .inner-box .image .overlay-box .read-more{
 	position:relative;
 	color:#ffffff;
@@ -293,9 +291,6 @@ size: 10px;
 section.projects-section > div > div > div.owl-nav.disabled {
 	display: block;
 }
-
-
-
 
 input {
 	border: 1px solid transparent;

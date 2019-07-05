@@ -1,4 +1,5 @@
 <?php
+// Conectarea la baza de date abonati
 
     $dbServername = "localhost:3308";
     $dbUsername = "root";

@@ -1,6 +1,7 @@
 <?php
 
-     $temp = 27.0;
+
+     $temp = 19.1;
 
     if(isset($_POST['submit'])){
 
@@ -8,7 +9,6 @@
         $gen = $_POST['gen'];
         $activity = $_POST['activity'];
 
-        
         switch($gen){
             case 'female':
                 switch($activity){
@@ -246,13 +246,11 @@
                     }
                     break;
             }
-            }
-    
+        }
 
-    if(($gen!='female' || $gen!='male') || $activity='Select activity') {
-        header("Location: ../templates/emptyFilter.php");
-        exit();
-    }
-
+        if(($gen!='female' || $gen!='male') || $activity='Select activity') {
+            header("Location: ../templates/emptyFilter.php");
+            exit();
+        }
     }
     

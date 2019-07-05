@@ -104,7 +104,9 @@
         </div>
     </div>    
     </div>
-
+    <?php
+    include_once('../footer.php');
+?>
 </body>
 </html>
 <!-- Javascript pentru viziualizarea imaginilor  -->

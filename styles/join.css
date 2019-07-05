@@ -16,16 +16,10 @@ align-content: center;
 
 .card{
 height: 500px;
-margin-top: auto;
+margin-top: 60px ;
 margin-bottom: auto;
 width: 500px;
 background-color: rgba(0,0,0,0.5)
-}
-
-
-.social_icon span:hover{
-color: white;
-cursor: pointer;
 }
 
 .card-header h3{
@@ -33,14 +27,17 @@ margin-top: 10px;
 color: white;
 }
 
-.error{
-    color: red;
-}
-
-
-  #leaflet{
-      height: 50%;
-      width: 70%;
-      margin:50px auto;
-      position: center;
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:#212529;
+	color: white;
+	text-align: center;
   }
+
+.footer p{
+margin: 0px ;
+font-size: 0.7rem;
+}

@@ -1,12 +1,7 @@
-
-
-
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-
-    
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,12 +21,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
 </head>
 
 <body>
 
-   
     <!-- Bara de meniu -->
     <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark ">
         <div class="container" >
@@ -42,27 +35,21 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../weather.html">Weather</a>
+                        <a class="nav-link" href="../weather.php">Weather</a>
                     </li>
 
                     <li class="nav-item">
-                            <a class="nav-link" href="../join.php">Join</a>
+                        <a class="nav-link" href="../join.php">Join</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="../about.html">About</a>
+                        <a class="nav-link" href="../about.php">About</a>
                     </li>   
                 </ul>
             </div>
-
-        
-
         </div>
     </nav>
     
-    
-
-
     <!-- Caseta de abonare -->
     <div class="container">
         <div class="d-flex justify-content-center h-100">
@@ -86,15 +73,15 @@
                                         header('Location: ../join.php');
                                     }
                                 ?>
-                            
                         </div>
-                    
                     </form>
                 </div>
             </div>
         </div>
         </div>
-
+<?php
+    include_once('../outfits/footer.php');
+?>
 
 </body>
 </html>

@@ -42,7 +42,6 @@
 
 <body>
   
-   
     <!-- Bara de meniu -->
     <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark ">
         <div class="container" >
@@ -66,21 +65,18 @@
                 </ul>
             </div>
 
-            
             <div class="col-sm-3 col-md-3">
                 <div id="address" style="color:white; text-align: right; "></div>
                 <div id='temp' style="color:white;  text-align: right;"></div>
             </div>
             <div><img class = "icon" width="75px" margin-left='0px'/></div>
-
-    
     </nav>
-
 
 <div class="container">
  <div id="leaflet"></div>
     <script type="application/javascript" src="//unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script> 
+ 
         var map = new L.Map('leaflet', {
         center: [47.159810,27.587200],
         zoom: 9,
@@ -105,17 +101,11 @@
     }).addTo(map);
     </script> 
 
-
-
 <div class="weather-app">
 	<div class="left">
     <div id="address2" class='location' style="color:white; text-align: right; "></div>
     <div id='temp2' class="temperature-celsius" style="color:white;  text-align: right;"></div>
-        <!-- <div id='temp' style="color:white; "></div> -->
-		<!-- <div id="toggleCelsius" class="temperature-celsius"><div id="temp"></div></div>  -->
-        <!-- <span id='temp'> </span> -->
-	    <!-- <div id='address' class="location"></div> -->
-        <!-- <div id="address" style="color:white; "></div> -->
+  
 	</div>
                     
     <div class="right">
@@ -138,7 +128,11 @@
 	</div>
 </div>
 
-
 </div>
+
+    <div class="footer">
+            <p>MyOutfit &copy 2019</p>
+            <p>Author: Țăpuc Andrada-Ionela</p>
+    </div>
 </body>
 </html>

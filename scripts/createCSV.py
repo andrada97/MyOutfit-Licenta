@@ -1,9 +1,10 @@
-# lon, lat, data, description, temp, pressure, humidity, temp_min, temp_max
+# Atributele necesare: lon, lat, data, description, temp, pressure, humidity, temp_min, temp_max
 
 import csv
 import requests
 from random import randint
 
+# Datele din csv vor fi adaugate cu ajutorul unui api
 def takeData(lat,lon):
     link ='https://fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+lon
     res = requests.get(link)
@@ -18,7 +19,6 @@ def takeData(lat,lon):
     temp_min = data['main']['temp_min']
     temp_max = data['main']['temp_max']
 
-
     return description,temp,pressure,humidity,temp_min,temp_max
 
 with open(r'dataset.csv', 'a', newline='') as fp:
@@ -32,6 +32,7 @@ with open(r'dataset.csv', 'a', newline='') as fp:
         lat = str(lat_n) + '.' + str(lat_z)
         description,temp,pressure,humidity,temp_min,temp_max = takeData(lat,lon)
         data = [lon,lat, '22-06-2019', description,temp,pressure,humidity,temp_min,temp_max]
+            # Adaugarea primului rand cu atribute
             # data =[['lon','lat','data', 'description','temp','pressure','humidity','temp_min','temp_max'],
             #          [lon,lat, '21-06-2019', description,temp,pressure,humidity,temp_min,temp_max]
             #      ]

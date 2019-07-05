@@ -1,4 +1,4 @@
-
+//Carousel de pe Bootstrap
 
 (function($) {
 	

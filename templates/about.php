@@ -3,14 +3,12 @@
 <html lang="en">
 <head>
 
-    
-    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="My outfit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About us</title>
+    <title>About & Contact</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -23,12 +21,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
 </head>
 
 <body>
   
-   
     <!-- Bara de meniu -->
     <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark ">
         <div class="container" >
@@ -51,10 +47,6 @@
                     </li>   
                 </ul>
             </div>
-
-            
-        
-
         </div>
     </nav>
 
@@ -62,7 +54,7 @@
         <div class="d-flex justify-content-center h-100">
             <div class="card">
                 <div class="card-header">
-                    <h3> About our team</h3>
+                    <h3> About our team and how to contact us</h3>
                     <div class="d-flex justify-content-end social_icon">
                         <span><i class="fab fa-facebook-square"></i></span>
                         <span><i class="fab fa-google-plus-square"></i></span>
@@ -81,14 +73,17 @@
                                         header('Location: ../index.php');
                                     }
                                 ?>
-                            
                         </div>
-                    
                     </form>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+
+    <div class="footer">
+        <p>MyOutfit &copy 2019</p>
+        <p>Author: Țăpuc Andrada-Ionela</p>
+    </div>
     
 </body>
 </html>

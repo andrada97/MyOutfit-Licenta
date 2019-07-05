@@ -9,23 +9,16 @@ font-family: 'Numans', sans-serif;
 }
 
 .container{
-   
 height: 100%;
 align-content: center;
 }
 
 .card{
-height: 50%;
+height: 65%;
 margin-top: auto;
 margin-bottom: auto;
-width: 50%;
+width: 60%;
 background-color: rgba(0,0,0,0.5)
-}
-
-
-.social_icon span:hover{
-color: white;
-cursor: pointer;
 }
 
 .card-header h3{
@@ -39,18 +32,17 @@ margin-top: 20px;
 color: whitesmoke;    
 }
 
-.login_btn{
-color: white;
-margin-top: 15px;
-size: 10px;
-}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:#212529;
+	color: white;
+	text-align: center;
+  }
 
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
-}
-
-.error{
-    color: red;
+.footer p{
+margin: 0px ;
+font-size: 0.7rem;
 }

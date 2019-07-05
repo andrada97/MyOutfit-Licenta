@@ -3,9 +3,7 @@
 
 <html lang="en">
 <head>
-
-    
-    
+ 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="My outfit">
@@ -24,12 +22,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
 </head>
 
 <body>
 
-   
     <!-- Bara de meniu -->
     <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark ">
         <div class="container" >
@@ -44,7 +40,7 @@
                     </li>
 
                     <li class="nav-item">
-                            <a class="nav-link" href="join.php">Join</a>
+                        <a class="nav-link" href="join.php">Join</a>
                     </li>
 
                     <li class="nav-item">
@@ -53,19 +49,15 @@
                 </ul>
             </div>
 
-        
-
         </div>
     </nav>
     
-    
-
     <!-- Caseta de abonare -->
     <div class="container">
         <div class="d-flex justify-content-center h-100">
             <div class="card">
                 <div class="card-header">
-                    <h3> Find your outfit everyday </h3>
+                    <h3> Find your outfit everyday! </h3>
                     <div class="d-flex justify-content-end social_icon">
                         <span><i class="fab fa-facebook-square"></i></span>
                         <span><i class="fab fa-google-plus-square"></i></span>
@@ -82,7 +74,6 @@
                             <input id="email" type="text" class="form-control" placeholder="Email Address" name='email'  autofocus>
                         </div>
                         
-
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -109,7 +100,6 @@
 								}
 							</script>
 							<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZiRQSd8fx7u4KGqey86oBwmUh1lWkuBA&libraries=places&callback=activatePlaces"></script>
-
                         </div>
 
                         <div class="input-group form-group">
@@ -124,13 +114,16 @@
                             <!-- <input type="submit" value="Abonare" class="btn float-right login_btn" > -->
                             <button  name ="submit" type="submit" class="btn btn-secondary float-right btn-dark" id="contact-submit">Join</button>
                         </div>
-                    
                     </form>
                 </div>
             </div>
         </div>
         </div>
 
+    <div class="footer">
+        <p>MyOutfit &copy 2019</p>
+        <p>Author: Țăpuc Andrada-Ionela</p>
+    </div>
 
 </body>
 </html>

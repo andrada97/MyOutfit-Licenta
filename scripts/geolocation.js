@@ -15,3 +15,12 @@ $.get("http://ipinfo.io", function (response) {
 	
 $.get("")
 
+
+// $.getJSON("http://ipinfo.io", function (data){
+    
+
+//     var lat = parseFloat((data.loc).split(',')[0]);
+//     var long = parseFloat((data.loc).split(',')[1]);
+//     var locatia = data.city;
+//     }
+

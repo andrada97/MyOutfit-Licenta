@@ -2,20 +2,19 @@
 $.getJSON("http://ipinfo.io", function (data){
     console.log(data);
     
-
+    // Aflam locatia curenta prin longitudine si latitudine
     var lat = (data.loc).split(',')[0];
     var long = (data.loc).split(',')[1];
+    $("#lati").html(lat);
+    $("#longi").html(long);
 
-    // console.log(lat);
-    // console.log(long);
-
+    // Aplicam longitudinea si latitudinea curenta in api, pentru a afla detaliile despre vremea prezenta
     var begin = "https://fcc-weather-api.glitch.me/api/current?lat=";
     var part = "&lon=";
     var link1 = begin.concat(lat);
     var link2 = link1.concat(part);
     var link = link2.concat(long);
 
-    // console.log(link);
 
     $.getJSON(link, function(response) {
         console.log(response);
@@ -26,49 +25,42 @@ $.getJSON("http://ipinfo.io", function (data){
         var wind = response.wind.speed;
         var icon = response.weather[0].icon;
 
+        // Date necesare predictiei
         var press = response.main.pressure;
         var tmin = response.main.temp_min;
         var tmax = response.main.temp_max
 
-        // console.log(humid);
-        // console.log(state);
-        // console.log(icon);
-        // console.log(wind);
-
-        $("#temp").html(temper +' \xB0C');
         $("#umid").html(humid + '%');
         $("#stare").html(state);
         $("#vant").html(wind + ' m/h');
         $(".icon").attr("src",icon);
-        $("#temp2").html(temper +' \xB0C');
 
-       
+        //Apelarea API-ului creat pentru realizarea predictiei
 
-        var req ={"Lon":long,
-        "Lat":lat,
-        "Pressure":press,
-        "Humidity":humid,
-        "Temp_min":tmin,
-        "Temp_max":tmax};
-  
-        var url = 'https://localhost:44349/api/Predict';
-        var json = JSON.stringify(req);
+        var myBody ='{"Lon":"' + long+
+                     '","Lat":"' + lat+
+                     '","Pressure":"'+ press+
+                     '","Humidity":"' + humid +
+                     '","Temp_min":"' + tmin +
+                     '","Temp_max":"' + tmax + '"}';
+        var corp = '{"Lon":"27.59","Lat":"47.15","Pressure":"1014","Humidity":"64", "Temp_min":"20.00","Temp_max":"25.01"}' ;
+        // console.log("Body" + info);
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST",url,true);
-        xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
-        xhr.onload = function(){
-            var temper = JSON.parse(xhr.responseText);
-         }
-        //  xhr.send(json);
-        console.log(temper);
-
-
-
-
-    })
+        function UserAction(body) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                 if (this.readyState == 4 && this.status == 200) {
+                    //  alert(this.responseText);
+                 }
+                 console.log(this.responseText);
+                 $("#temp").html(Math.round(this.responseText * 100) / 100+' \xB0C');
+                 $("#temp2").html(Math.round(this.responseText * 100) / 100+' \xB0C');
    
-
-
-
+            };
+            xhttp.open("POST", "https://localhost:44349/api/Predict", true);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send(body);
+        }
+        UserAction(myBody);
+    })
 })
